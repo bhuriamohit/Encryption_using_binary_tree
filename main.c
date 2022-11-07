@@ -42,22 +42,8 @@ void free_tree(Node* root) {
     }
 }
 
-int tree_height(Node* root) {
-    // Get the height of the tree
-    if (!root)
-        return 0;
-    else {
-        // Find the height of both subtrees
-        // and use the larger one
-        int left_height = tree_height(root->left);
-        int right_height = tree_height(root->right);
-        if (left_height >= right_height)
-            return left_height + 1;
-        else
-            return right_height + 1;
-    }
-}
 
+// 
 void print_level(Node* root, int level_no) {
     // Prints the nodes in the tree
     // having a level = level_no
