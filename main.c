@@ -241,7 +241,7 @@ int main(void)
 {
     
     char c;
-    printf("Welcome to Bhuria Security Agency\n");
+    
 
         printf("\n1. To encrypt\n2. to decrypt\n3. quit");
 
