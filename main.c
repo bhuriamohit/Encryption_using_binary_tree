@@ -1,3 +1,10 @@
+/*
+Mohit bhuria
+Mohit meena
+Nitesh gurjar
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -41,7 +48,6 @@ void free_tree(Node* root) {
         return;
     }
 }
-
 int tree_height(Node* root) {
     // Get the height of the tree
     if (!root)
@@ -58,6 +64,7 @@ int tree_height(Node* root) {
     }
 }
 
+// 
 void print_level(Node* root, int level_no) {
     // Prints the nodes in the tree
     // having a level = level_no
@@ -82,6 +89,7 @@ void print_level(Node* root, int level_no) {
     }
 
 }
+
 
 void print_tree_level_order(Node* root) {
     if (!root)
@@ -178,6 +186,7 @@ void encrypt(void)
     {
         printf("%c", a[i]);
     }
+    len=0;
 }//function for decryption
 void decrypt(void)
 {
@@ -235,14 +244,15 @@ void decrypt(void)
     {
         printf("%c", a[i]);
     }
+    len=0;
 }
 int main(void)
 {
     
     char c;
-    printf("Welcome to Bhuria Security Agency\n");
+   
 
-        printf("\n1. To encrypt\n2. to decrypt\n3. quit");
+       while(1) {printf("\n1. To encrypt\n2. to decrypt\n3. quit");
 
         printf("\nEnter the choice(1 or 2 or 3)\n");
 
@@ -255,12 +265,16 @@ int main(void)
         else if (c == '2')
         {
             decrypt();
+    printf("\n");
         }
-        else
+        else if (c=='3')
         {
             printf("\nQuited.....\n");
             return 0;
         }
+        else {
+            printf("Please enter a right choice");
+        }}
        
     return 0;
 }
