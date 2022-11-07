@@ -248,8 +248,8 @@ void decrypt(void)
 int main(void)
 {
     
-    char c;
-    printf("Welcome to Bhuria Security Agency\n");
+   while(1) {char c;
+   
 
         printf("\n1. To encrypt\n2. to decrypt\n3. quit");
 
@@ -274,6 +274,7 @@ int main(void)
         else {
             printf("Please enter a right choice");
         }}
+         return 0;
+        }
        
-    return 0;
-}
+   
