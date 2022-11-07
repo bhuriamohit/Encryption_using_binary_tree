@@ -48,6 +48,7 @@ void free_tree(Node* root) {
         return;
     }
 }
+
 int tree_height(Node* root) {
     // Get the height of the tree
     if (!root)
@@ -64,7 +65,6 @@ int tree_height(Node* root) {
     }
 }
 
-// 
 void print_level(Node* root, int level_no) {
     // Prints the nodes in the tree
     // having a level = level_no
@@ -89,7 +89,6 @@ void print_level(Node* root, int level_no) {
     }
 
 }
-
 
 void print_tree_level_order(Node* root) {
     if (!root)
@@ -250,9 +249,9 @@ int main(void)
 {
     
     char c;
-   
+    printf("Welcome to Bhuria Security Agency\n");
 
-       while(1) {printf("\n1. To encrypt\n2. to decrypt\n3. quit");
+        printf("\n1. To encrypt\n2. to decrypt\n3. quit");
 
         printf("\nEnter the choice(1 or 2 or 3)\n");
 
