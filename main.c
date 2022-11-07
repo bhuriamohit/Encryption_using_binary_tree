@@ -58,6 +58,30 @@ int tree_height(Node* root) {
 }
 
 // 
+void print_level(Node* root, int level_no) {
+    // Prints the nodes in the tree
+    // having a level = level_no
+    
+    // We have a auxiliary root node
+    // for printing the root of every
+    // subtree
+    if (!root)
+        return;
+    if (level_no == 0) {
+        // We are at the top of a subtree
+        // So print the auxiliary root node
+        printf("%d -> ", root->value);
+    }
+    else {
+        // Make the auxiliary root node to
+        // be the left and right nodes for
+        // the subtrees and decrease level by 1, since
+        // you are moving from top to bottom
+        print_level(root->left, level_no - 1);
+        print_level(root->right, level_no - 1);
+    }
+
+}
 
 
 void print_tree_level_order(Node* root) {
