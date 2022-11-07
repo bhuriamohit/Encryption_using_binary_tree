@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 size_t len = 0;
+
+
 char *inputString(FILE *fp, size_t size)
 {
     // The size is extended by the input with the value of the provisional
     char *str;
     int ch;
-
     str = realloc(NULL, sizeof(*str) * size); // size is start size
     if (!str)
         return str;
